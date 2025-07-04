@@ -1,4 +1,7 @@
 import { MailService } from '@sendgrid/mail';
+// Load environment variables
+import * as dotenv from 'dotenv';
+dotenv.config();
 
 if (!process.env.SENDGRID_API_KEY) {
   console.warn("SENDGRID_API_KEY not found. Email functionality will be disabled.");

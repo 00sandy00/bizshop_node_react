@@ -1,5 +1,8 @@
 import crypto from 'crypto';
 import type { Request, Response } from 'express';
+// Load environment variables
+import * as dotenv from 'dotenv';
+dotenv.config();
 
 interface PaytmConfig {
   merchantId: string;

@@ -3,6 +3,9 @@ import { Request, Response } from "express";
 import crypto from "crypto";
 import { storage } from "./storage";
 import { getPlanById } from "@shared/subscription-plans";
+// Load environment variables
+import * as dotenv from 'dotenv';
+dotenv.config();
 
 // Initialize Razorpay instance
 const getRazorpayInstance = () => {

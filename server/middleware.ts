@@ -2,6 +2,9 @@ import rateLimit from 'express-rate-limit';
 import helmet from 'helmet';
 import cors from 'cors';
 import { Request, Response, NextFunction } from 'express';
+// Load environment variables
+import * as dotenv from 'dotenv';
+dotenv.config();
 
 // Rate limiting configurations
 export const generalLimiter = rateLimit({

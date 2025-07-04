@@ -54,6 +54,9 @@ import { promisify } from "util";
 import multer from "multer";
 import { join, extname } from "path";
 import { promises as fs } from "fs";
+// Load environment variables
+import * as dotenv from 'dotenv';
+dotenv.config();
 
 const scryptAsync = promisify(scrypt);
 

@@ -8,6 +8,9 @@ import { storage } from "./storage";
 import { sendEmail, generateVerificationEmail, generatePasswordResetEmail } from "./email";
 import { authLimiter, passwordResetLimiter } from "./middleware";
 import { User as SelectUser } from "@shared/schema";
+// Load environment variables
+import * as dotenv from 'dotenv';
+dotenv.config();
 
 declare global {
   namespace Express {
